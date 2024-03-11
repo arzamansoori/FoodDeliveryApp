@@ -1,0 +1,27 @@
+{
+  "name": "fooddeliveryapp",
+  "version": "1.0.0",
+  "description": "Food delivery app",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arzamansoori/FoodDeliveryApp.git"
+  },
+  "author": "Arza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arzamansoori/FoodDeliveryApp/issues"
+  },
+  "homepage": "https://github.com/arzamansoori/FoodDeliveryApp#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
