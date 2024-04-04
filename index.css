@@ -49,3 +49,8 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.filter-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+}
