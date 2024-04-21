@@ -34,7 +34,7 @@
 }
 
 #restro-container:hover {
-    border: 1.5px solid black;
+    border: 1px solid black;
     cursor: pointer;
 }
 
