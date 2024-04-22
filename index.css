@@ -26,15 +26,15 @@
 }
 
 #restro-container {
-    background-color:beige;
+    background-color:#F9F3CC;
     margin: 10px;
     width: 250px;
-    height: 400px;
-    padding: 10px;
+    height: 350px;
+    padding: 5px;
 }
 
 #restro-container:hover {
-    border: 1px solid black;
+    /* border: solid black; */
     cursor: pointer;
 }
 
@@ -53,4 +53,18 @@
 .filter-btn{
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.shimmer-box{
+    background-color:#F9F3CC;
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    border: 1px;
+}
+
+.shimmer-container{
+    display: flex;
+    justify-content: flex-start;
 }

@@ -1,6 +1,7 @@
 import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
-import { resList } from "../utils/mockData";
+import ShimmerCard from "./ShimmerCard";
+//import { resList } from "../utils/mockData";
 
 //USING NORMAL JAVASCRIPT
 // let listOfRestaurants = [
@@ -51,7 +52,7 @@ import { resList } from "../utils/mockData";
 
 const Body = () => {
 
-  const [listOfRestaurants, stateListOfRestaurants] = useState([]);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
   useEffect(()=>{
     fetchData();
@@ -67,8 +68,13 @@ const Body = () => {
     //stateListOfRestaurants(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
     
     //recommended way
-    stateListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
+
+  if(listOfRestaurants.length === 0){
+    return <ShimmerCard />
+  }
+  
 
 
   return (
@@ -79,7 +85,7 @@ const Body = () => {
         //using useState
         const filteredList = listOfRestaurants.filter((res) => res.info.avgRating > 4);
 
-        stateListOfRestaurants(filteredList);
+        setListOfRestaurants(filteredList);
 
         //USING NORMAL JAVASCRIPT
         // listOfRestaurants = listOfRestaurants.filter((res) => 
