@@ -28,8 +28,8 @@ Structure of the app:
   * In Microservice arch, we have diff service for diff jobs know as *Separation of concers* & *Single Responsibility Principle*. Like, Back end can be written in Java & Front end can be written in JavaScript.
 
 * Two approaches on fetching data from BE
-  * Loads -> API -> Render
-  * Loads -> Render -> API -> Render
+  * *Loads -> API -> Render*
+  * *Loads -> Render -> API -> Render*
   * In react, we use second approach as it gives better ux experience.
 
 * useEffect Hook
@@ -42,8 +42,8 @@ Structure of the app:
    * We can use async await to fetch the data.
 
 * Shimmer UI
-   * It is the scenerio when the UI loads -> Render -> makes an API Call -> Render
+   * It is the scenerio when the *UI loads -> Render -> makes an API Call -> Render*
    * Shimmer UI comes in play for the first rendering. This is generally done for better ux experience.
-   * It is the dummy page that users see. I have coded this in ShimmerCard.js. 
+   * It is the dummy page that users see. I have coded this in *ShimmerCard.js*. 
  
  
