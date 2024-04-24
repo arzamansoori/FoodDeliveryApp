@@ -68,3 +68,10 @@
     display: flex;
     justify-content: flex-start;
 }
+
+.header-btn{
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}

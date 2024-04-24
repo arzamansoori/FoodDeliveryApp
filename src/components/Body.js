@@ -49,52 +49,56 @@ import ShimmerCard from "./ShimmerCard";
 // }
 // ];
 
-
 const Body = () => {
-
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING");
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+    );
 
     const json = await data.json();
 
     console.log(json);
     //this is not a recommended way
     //stateListOfRestaurants(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
-    
+
     //recommended way
-    setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-  }
+    setListOfRestaurants(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+  };
 
-  if(listOfRestaurants.length === 0){
-    return <ShimmerCard />
-  }
-  
+  //Conditional rendering
 
-
-  return (
+  return listOfRestaurants.length === 0 ? (
+    <ShimmerCard />
+  ) : (
     <div className="body">
-      <button className="filter-btn" 
-      onClick={() => {
-        //filter logic
-        //using useState
-        const filteredList = listOfRestaurants.filter((res) => res.info.avgRating > 4);
+      <button
+        className="filter-btn"
+        onClick={() => {
+          //filter logic
+          //using useState
+          const filteredList = listOfRestaurants.filter(
+            (res) => res.info.avgRating > 4.5
+          );
 
-        setListOfRestaurants(filteredList);
+          setListOfRestaurants(filteredList);
 
-        //USING NORMAL JAVASCRIPT
-        // listOfRestaurants = listOfRestaurants.filter((res) => 
-        //   res.info.avgRating > 4
-        // );
-        // console.log(listOfRestaurants);
-      }}
-      > 
-      Top Rated Restaurants </button>
+          //USING NORMAL JAVASCRIPT
+          // listOfRestaurants = listOfRestaurants.filter((res) =>
+          //   res.info.avgRating > 4
+          // );
+          // console.log(listOfRestaurants);
+        }}
+      >
+        Top Rated Restaurants{" "}
+      </button>
 
       <div className="res-container">
         {listOfRestaurants.map((restaurant) => (
