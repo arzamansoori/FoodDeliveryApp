@@ -52,6 +52,8 @@ import ShimmerCard from "./ShimmerCard";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
+  const [filterRestaurants, setFilterRestaurants] = useState([]);
+
   const [searchRestaurants, setsearchRestaurants] = useState("");
 
   console.log("Body rendered");
@@ -75,8 +77,10 @@ const Body = () => {
     setListOfRestaurants(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    setFilterRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
+  console.log("List of restaurants",listOfRestaurants);
   //Conditional rendering
 
   return listOfRestaurants.length === 0 ? (
@@ -91,14 +95,21 @@ const Body = () => {
             className="search-box"
             value={searchRestaurants}
             onChange={(e) => {
-              setsearchRestaurants(e.target.value);
+              if(e.target.value){
+                setsearchRestaurants(e.target.value);
+              }
+              else{
+                setsearchRestaurants(e.target.value = "")
+                setFilterRestaurants(listOfRestaurants);
+              }
             }}
           ></input>
-          <button className="filter-search" onClick={() => {
+          <button className="filter-search" onClick={() => {           
             const filteredRestaurants = listOfRestaurants.filter((res) => {
-              res.info.name.toLowerCase().includes(searchRestaurants.toLowerCase())
+              return res.info.name.toLowerCase().includes(searchRestaurants.toLowerCase())
+              
             })
-            setsearchRestaurants(filteredRestaurants)
+            setFilterRestaurants(filteredRestaurants)
           }}>
             Search
           </button>
@@ -113,19 +124,13 @@ const Body = () => {
             );
 
             setListOfRestaurants(filteredList);
-
-            //USING NORMAL JAVASCRIPT
-            // listOfRestaurants = listOfRestaurants.filter((res) =>
-            //   res.info.avgRating > 4
-            // );
-            // console.log(listOfRestaurants);
           }}
         >
           Top Rated Restaurants{" "}
         </button>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((restaurant) => (
+        {filterRestaurants.map((restaurant) => (
           <RestroCard key={restaurant.info.id} resData={restaurant} />
         ))}
       </div>
