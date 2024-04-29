@@ -54,4 +54,31 @@ Structure of the app:
      * For this I introduce a copy for stateVarible, including this I wasn't updating my main listofRestaurants.
      * Another problem I faced was, while clicking on backspace I wasn't able to clear all of the input box. For this, if there are any words present in input box, it will search normally. But, if not it will first *setSearchRestaurants(e.target.value="")*, sets the input value as "" and the *setFilterRestaurants(listOfRestaurants)* which will render the whole list.
  
- 
+ ## Finding the path
+
+ #### We'll be creating url for different page in our app
+
+ * Some important points to note for useEfffect() hook: 
+   * If useEffect has no dependency array, *it will be called on every render*
+   * If useEffect has dependency but it's empty, *it will be called only the first time*
+   * If useEffect has dependency but it's not empty, *it will be called whenever the dependency changes*
+
+* Creating routes in react application
+  * For this, install "npm i react-router-dom"
+  * For creating routes, we've to create routing configurations
+    * import {createBrowserRouter} from react-router-dom : takes list of paths
+    * To render it onto the page we use *Router Provider*, this will actually provides the routing configurations to our app.
+  * We can also develope Error component.
+
+  * Creating Children routes:
+    * We have to use component known as *Outlet* 
+     * It should be used in parent route elements to render their child routes elements
+
+* Linking the url:
+  * We dont't want to use anchor tag as it reloads the whole page, as React is known as Single Page Application, to justify this React provide us with *Link*.
+  * It only renders the children component if that's what we want to be rendered.
+   > Link to="/contact"> Contact 
+
+* Two types of routing:
+  * Clent Side Rendering
+  * Server Side Rendering
