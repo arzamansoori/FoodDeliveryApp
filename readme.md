@@ -82,3 +82,13 @@ Structure of the app:
 * Two types of routing:
   * Clent Side Rendering
   * Server Side Rendering
+
+* Restaurant menu.js
+  * We want to render this component on a specific route. For this we will create one more route in App.js
+  * this path should be dynamic as we'll be loading diff types of menu
+    :resId means this part of the url is dynamic. So, our routes will be unique whenever we have our restaurants.
+
+* Cool info about Link Tag :
+  * Link ia a component which is given to us by React-router-dom. Behind the scenes, *Link is using anchor tag*
+  * Link is a wrapper over anchor tag.
+  * When we define *Link*. It takes a notice that this tag is a link and it shouldn't reloads the whole page.

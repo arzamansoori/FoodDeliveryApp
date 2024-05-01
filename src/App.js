@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 
 
@@ -35,6 +36,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        // this path should be dynamic as we'll be loading diff types of menu
+        // :resId means this part of the url is dynamic
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />
       },
     ],
     errorElement: <Error />
