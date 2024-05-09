@@ -92,3 +92,6 @@ Structure of the app:
   * Link ia a component which is given to us by React-router-dom. Behind the scenes, *Link is using anchor tag*
   * Link is a wrapper over anchor tag.
   * When we define *Link*. It takes a notice that this tag is a link and it shouldn't reloads the whole page.
+
+## Class Based Components
+

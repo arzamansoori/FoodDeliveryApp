@@ -93,3 +93,8 @@
 .filter-search{
     cursor: pointer;
 }
+
+.user-card{
+    border: 1px solid brown;
+    padding-left: 10px;
+}
