@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -7,8 +7,16 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
+import ShimmerCard from "./components/ShimmerCard";
+//import Grocery from "./components/Grocery";
 
-
+// Lazy loading/ Dynamic Import/ Dynamic bundling/ Code splitting/ On Demand loading
+ const Grocery = lazy(() => {
+  return (
+    import("./components/Grocery")
+  )
+ }
+ )
 
 const AppLayout = () => {
   return (
@@ -36,6 +44,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        path: "/grocery",
+        element: <Suspense fallback={<ShimmerCard />}><Grocery/></Suspense>
       },
       {
         // this path should be dynamic as we'll be loading diff types of menu

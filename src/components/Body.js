@@ -2,7 +2,7 @@ import RestroCard from "./RestroCard";
 import { useState, useEffect } from "react";
 import ShimmerCard from "./ShimmerCard";
 import { Link } from "react-router-dom";
-//import { resList } from "../utils/mockData";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 //USING NORMAL JAVASCRIPT
 // let listOfRestaurants = [
@@ -78,10 +78,20 @@ const Body = () => {
     setListOfRestaurants(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilterRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setFilterRestaurants(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
-  console.log("List of restaurants",listOfRestaurants);
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) {
+    return(
+    <h3>Oops! Looks like you're offline.</h3>
+    );
+  };
+
+  console.log("List of restaurants", listOfRestaurants);
   //Conditional rendering
 
   return listOfRestaurants.length === 0 ? (
@@ -96,22 +106,25 @@ const Body = () => {
             className="search-box"
             value={searchRestaurants}
             onChange={(e) => {
-              if(e.target.value){
+              if (e.target.value) {
                 setsearchRestaurants(e.target.value);
-              }
-              else{
-                setsearchRestaurants(e.target.value = "")
+              } else {
+                setsearchRestaurants((e.target.value = ""));
                 setFilterRestaurants(listOfRestaurants);
               }
             }}
           ></input>
-          <button className="filter-search" onClick={() => {           
-            const filteredRestaurants = listOfRestaurants.filter((res) => {
-              return res.info.name.toLowerCase().includes(searchRestaurants.toLowerCase())
-              
-            })
-            setFilterRestaurants(filteredRestaurants)
-          }}>
+          <button
+            className="filter-search"
+            onClick={() => {
+              const filteredRestaurants = listOfRestaurants.filter((res) => {
+                return res.info.name
+                  .toLowerCase()
+                  .includes(searchRestaurants.toLowerCase());
+              });
+              setFilterRestaurants(filteredRestaurants);
+            }}
+          >
             Search
           </button>
         </div>
@@ -132,7 +145,12 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filterRestaurants.map((restaurant) => (
-          <Link to={"/restaurants/" + restaurant.info.id} key={restaurant.info.id}><RestroCard resData={restaurant} /></Link>
+          <Link
+            to={"/restaurants/" + restaurant.info.id}
+            key={restaurant.info.id}
+          >
+            <RestroCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>

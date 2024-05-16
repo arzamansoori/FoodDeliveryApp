@@ -1,26 +1,14 @@
 //this restaurant menu component will be reused, in this dynamic data will be reloaded
-import { useEffect, useState } from "react";
+//this component only has one job just to display the data
+
 import ShimmerCard from "./ShimmerCard";
 import { useParams } from "react-router-dom";
-import { Menu_URL } from "../utils/constants";
+import useRestaurantMenu from "../utils/useRestaurantmenu";
 
 const RestaurantMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
+  const { resId } = useParams();
 
-  const {resId} = useParams();
-
-  useEffect(() => {
-    fetchMenu();
-  }, []);
-
-  const fetchMenu = async () => {
-    const data = await fetch(Menu_URL+resId);
-
-    const json = await data.json();
-
-    console.log(json);
-    setResInfo(json.data);
-  };
+  const resInfo = useRestaurantMenu(resId);
 
   if (resInfo === null) {
     return <ShimmerCard />;

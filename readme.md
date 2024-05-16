@@ -95,3 +95,32 @@ Structure of the app:
 
 ## Class Based Components
 
+
+
+## Custom Hooks
+
+* Makes the code more readble.
+* Easy to detect the bug, while running different test cases for different components.
+
+* Making *online/offline* feature
+  * For making this feature, we'll need Event Listener that will track that we're online/ offline.
+  * This superpower is given to us by window object and the browser.
+  * We can use custom hooks and useEffect for this. I have written the code for this in *useOnlineStatus.js*. 
+  * Used this custom hook in several spaces.
+
+## Optimising our App
+
+* Real world projects have 1000's of component that impacts on the performance. Parcel is a bundler which makes one js file. It is not good for the optimization of our app.
+* So, we divide our components in various bundles to reduce the size of the file and to increase the performance.
+* The process in which we make smaller bundles of these files is known as *Lazy Loading*
+  * Other name for this process are:
+    * Dynamic Bundling
+    * Code splitting
+    * Dynamic Import
+    * On demand loading
+
+* Lazy Loading: 
+> It means that when we load our page, the code won't be loaded for the other bundle. We won't be loading everything at once, bull we'll be loading for what is required also known as On demand loading.
+
+> Handling the state between Rendering and Loading is know as Suspense.
+* Suspense is a component comes from a React library. React gives you suspense and you can wrap your component in suspense. Give it a placeholder kind of like a fallback to what should React render when the code is not available.
