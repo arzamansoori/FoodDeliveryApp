@@ -98,12 +98,12 @@ const Body = () => {
     <ShimmerCard />
   ) : (
     <div className="body">
-      <div className="filter-btns">
-        <div className="search-btns">
+      <div className="flex items-center justify-start flex-wrap">
+        <div className="m-4 p-2">
           {/* input and search button */}
           <input
             type="text"
-            className="search-box"
+            className="border border-solid border-black"
             value={searchRestaurants}
             onChange={(e) => {
               if (e.target.value) {
@@ -115,7 +115,7 @@ const Body = () => {
             }}
           ></input>
           <button
-            className="filter-search"
+            className="rounded-md border-2 border-pink-200 hover:border-b-4 px-5 py-0.5 bg-green-100 m-4"
             onClick={() => {
               const filteredRestaurants = listOfRestaurants.filter((res) => {
                 return res.info.name
@@ -129,7 +129,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="filter-btn"
+          className="h-8 rounded-md border-2 border-pink-200 hover:border-b-4 px-5 py-0.5 bg-green-100 m-4"
           onClick={() => {
             //filter logic
             //using useState
@@ -143,7 +143,7 @@ const Body = () => {
           Top Rated Restaurants{" "}
         </button>
       </div>
-      <div className="res-container">
+      <div className="flex justify-between flex-wrap">
         {filterRestaurants.map((restaurant) => (
           <Link
             to={"/restaurants/" + restaurant.info.id}

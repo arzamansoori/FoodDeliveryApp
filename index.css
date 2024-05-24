@@ -1,4 +1,9 @@
-.heading {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,12 +34,10 @@
     background-color:#F9F3CC;
     margin: 10px;
     width: 250px;
-    /* height: 350px; */
     padding: 5px;
 }
 
 #restro-container:hover {
-    /* border: solid black; */
     cursor: pointer;
 }
 
@@ -97,4 +100,4 @@
 .user-card{
     border: 1px solid brown;
     padding-left: 10px;
-}
+} */

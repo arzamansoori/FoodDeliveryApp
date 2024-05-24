@@ -17,28 +17,28 @@ const Header = () => {
   }, [btnNameReact]);
 
   return (
-    <div className="heading">
+    <div className="flex justify-between bg-pink-200 shadow-lg m-2 flex-wrap">
       <div>
-        <img id="logo" src={LOGO_URL}></img>
+        <img className="w-24" src={LOGO_URL}></img>
       </div>
-      <div id="navItems">
-        <ul>
-          <li>
+      <div className="flex items-center">
+        <ul className="p-8 flex flex-row justify-between">
+          <li className="px-2">
             {onlineStatus ? "Online: 🟢" : "Offline: 🔴"}
           </li>
-          <li>
+          <li className="px-2">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="px-2">
             <Link to="/about">About Us</Link>
           </li>
-          <li>
+          <li className="px-2">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
+          <li className="px-2">
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li>Cart</li>
+          <li className="px-2">Cart</li>
           <button
             className="header-btn"
             onClick={() => {
