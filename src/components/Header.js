@@ -21,8 +21,8 @@ const Header = () => {
       <div>
         <img className="w-24" src={LOGO_URL}></img>
       </div>
-      <div className="flex items-center">
-        <ul className="p-8 flex flex-row justify-between">
+      <div className="flex items-center flex-wrap">
+        <ul className="p-8 flex flex-row justify-between flex-wrap">
           <li className="px-2">
             {onlineStatus ? "Online: 🟢" : "Offline: 🔴"}
           </li>

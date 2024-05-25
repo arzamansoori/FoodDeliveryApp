@@ -91,12 +91,17 @@ const Body = () => {
     );
   };
 
+  if (listOfRestaurants.length === 0) {
+    return <ShimmerCard />;
+  }
+
   console.log("List of restaurants", listOfRestaurants);
   //Conditional rendering
+  // listOfRestaurants.length === 0 ? (
+  //   <ShimmerCard />
+  // ) :
 
-  return listOfRestaurants.length === 0 ? (
-    <ShimmerCard />
-  ) : (
+  return  (
     <div className="body">
       <div className="flex items-center justify-start flex-wrap">
         <div className="m-4 p-2">
@@ -143,7 +148,7 @@ const Body = () => {
           Top Rated Restaurants{" "}
         </button>
       </div>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-around flex-wrap">
         {filterRestaurants.map((restaurant) => (
           <Link
             to={"/restaurants/" + restaurant.info.id}

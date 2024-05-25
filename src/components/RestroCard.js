@@ -4,15 +4,17 @@ const RestroCard = (props) => {
   const { resData } = props;
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
     resData?.info;
+    let cuisines2 = cuisines.slice(0, 2);
+    let displayName = name.length >20 ? name.slice(0,20).concat("...") : name;
   return (
-    <div className="m-4 p-4 w-[250px] bg-gray-100 hover:bg-gray-300 rounded">
+    <div className="flex flex-col shadow-lg m-4 p-4 w-[250px] bg-gray-100 hover:bg-gray-300 rounded">
       <img
-        className="rounded-lg"
+        className="rounded-lg h-40"
         src={CDN_URL + cloudinaryImageId}
       ></img>
-      <h3 className="font-bold py-3 text-lg">{name}</h3>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>{avgRating}</h4>
+      <h3 className="font-bold py-1 text-lg">{displayName}</h3>
+      <h4 className="py-0.5">{cuisines2.join(", ")}</h4>
+      <h4 className="py-0.5">{avgRating}</h4>
       <h4>{costForTwo}</h4>
     </div>
   );
