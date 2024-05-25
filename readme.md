@@ -124,3 +124,7 @@ Structure of the app:
 
 > Handling the state between Rendering and Loading is know as Suspense.
 * Suspense is a component comes from a React library. React gives you suspense and you can wrap your component in suspense. Give it a placeholder kind of like a fallback to what should React render when the code is not available.
+
+## Tailwind CSS
+
+Added tailwind css in react for its ease of use. Also, added condition in the retro box to remove any unnecessary texts from cuisines.
