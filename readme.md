@@ -128,3 +128,10 @@ Structure of the app:
 ## Tailwind CSS
 
 Added tailwind css in react for its ease of use. Also, added condition in the retro box to remove any unnecessary texts from cuisines.
+
+## Higher Order Component
+
+HOC is a function that takes a component and returns a component. 
+HOC takes component as an input and it enhances the component and returns it back. Acts as an enhancer.
+
+Added *PROMOTED* label using HOC. 
