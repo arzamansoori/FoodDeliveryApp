@@ -1,4 +1,4 @@
-import RestroCard from "./RestroCard";
+import RestroCard, { withPromotedLabel } from "./RestroCard";
 import { useState, useEffect } from "react";
 import ShimmerCard from "./ShimmerCard";
 import { Link } from "react-router-dom";
@@ -57,6 +57,8 @@ const Body = () => {
 
   const [searchRestaurants, setsearchRestaurants] = useState("");
 
+  const RestaurantCardPromoted = withPromotedLabel(RestroCard);
+
   console.log("Body rendered");
 
   useEffect(() => {
@@ -65,31 +67,54 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/mapi/homepage/getCards?lat=12.9352403&lng=77.624532"
     );
 
     const json = await data.json();
+    const apiData = json?.data?.success?.cards;
 
-    console.log(json);
+    const cardsWithRestaurants = apiData.filter(
+      (card) =>
+        card?.gridWidget?.gridElements?.infoWithStyle?.restaurants != undefined
+    );
+
+    let allRestaurants = [];
+
+    for (let card of cardsWithRestaurants) {
+      allRestaurants = allRestaurants.concat(
+        card?.gridWidget?.gridElements?.infoWithStyle?.restaurants
+      );
+    }
+    console.log("concat", allRestaurants);
+
+    let uniqueRestaurants = [];
+    let resIdArr = [];
+
+    //removing duplicate key
+    for (let res of allRestaurants) {
+      let resId = res?.info?.id;
+
+      if (!resIdArr.includes(resId)) {
+        //add restaurant and res id
+        resIdArr.push(resId);
+        uniqueRestaurants.push(res);
+      }
+    }
+    console.log("unique Res", uniqueRestaurants);
+    console.log("resIdArr", resIdArr);
+
     //this is not a recommended way
     //stateListOfRestaurants(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
 
-    //recommended way
-    setListOfRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-    setFilterRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+    setListOfRestaurants(uniqueRestaurants);
+    setFilterRestaurants(uniqueRestaurants);
   };
 
   const onlineStatus = useOnlineStatus();
 
   if (onlineStatus === false) {
-    return(
-    <h3>Oops! Looks like you're offline.</h3>
-    );
-  };
+    return <h3>Oops! Looks like you're offline.</h3>;
+  }
 
   if (listOfRestaurants.length === 0) {
     return <ShimmerCard />;
@@ -101,7 +126,7 @@ const Body = () => {
   //   <ShimmerCard />
   // ) :
 
-  return  (
+  return (
     <div className="body">
       <div className="flex items-center justify-start flex-wrap">
         <div className="m-4 p-2">
@@ -154,7 +179,11 @@ const Body = () => {
             to={"/restaurants/" + restaurant.info.id}
             key={restaurant.info.id}
           >
-            <RestroCard resData={restaurant} />
+            {restaurant?.info?.promoted ? (
+              <RestaurantCardPromoted resData={restaurant} />
+            ) : (
+              <RestroCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
