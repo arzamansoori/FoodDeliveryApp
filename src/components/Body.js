@@ -67,18 +67,23 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/mapi/homepage/getCards?lat=12.9352403&lng=77.624532"
+      //"https://www.swiggy.com/mapi/homepage/getCards?lat=12.9352403&lng=77.624532"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
     );
 
     const json = await data.json();
-    const apiData = json?.data?.success?.cards;
+    console.log("printing json",json);
+    const allCards = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    console.log("allcards",allCards)
 
-    const cardsWithRestaurants = apiData.filter(
+    const cardsWithRestaurants = allCards.filter(
       (card) =>
-        card?.gridWidget?.gridElements?.infoWithStyle?.restaurants != undefined
+        card?.card?.gridElements?.infoWithStyle?.restaurants != undefined
     );
 
     let allRestaurants = [];
+
+    console.log("Cards with restaurants", cardsWithRestaurants)
 
     for (let card of cardsWithRestaurants) {
       allRestaurants = allRestaurants.concat(
@@ -106,8 +111,10 @@ const Body = () => {
     //this is not a recommended way
     //stateListOfRestaurants(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
 
-    setListOfRestaurants(uniqueRestaurants);
-    setFilterRestaurants(uniqueRestaurants);
+    //setListOfRestaurants(uniqueRestaurants);
+    setListOfRestaurants(allCards);
+
+    setFilterRestaurants(allCards);
   };
 
   const onlineStatus = useOnlineStatus();
@@ -176,15 +183,21 @@ const Body = () => {
       <div className="flex justify-around flex-wrap">
         {filterRestaurants.map((restaurant) => (
           <Link
-            to={"/restaurants/" + restaurant.info.id}
-            key={restaurant.info.id}
-          >
-            {restaurant?.info?.promoted ? (
-              <RestaurantCardPromoted resData={restaurant} />
-            ) : (
-              <RestroCard resData={restaurant} />
-            )}
-          </Link>
+          to={"/restaurants/" + restaurant.info.id}
+          key={restaurant.info.id}
+        >
+          <RestroCard resData={restaurant} />
+        </Link>
+          // <Link
+          //   to={"/restaurants/" + restaurant.info.id}
+          //   key={restaurant.info.id}
+          // >
+          //   {restaurant?.info?.promoted ? (
+          //     <RestaurantCardPromoted resData={restaurant} />
+          //   ) : (
+          //     <RestroCard resData={restaurant} />
+          //   )}
+          // </Link>
         ))}
       </div>
     </div>

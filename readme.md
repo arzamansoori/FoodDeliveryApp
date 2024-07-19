@@ -134,4 +134,11 @@ Added tailwind css in react for its ease of use. Also, added condition in the re
 HOC is a function that takes a component and returns a component. 
 HOC takes component as an input and it enhances the component and returns it back. Acts as an enhancer.
 
-Added *PROMOTED* label using HOC. 
+Added *PROMOTED* label using HOC. (Had to remove it because Swiggy API removed the promoted structure from its API)
+
+## Acordion Feature
+
+Developed Acordion feature for Menu Items Category. Added two new components named ResItemCategory & ResItemList. 
+* ResItemCategory is for Acordion Header, from here we call Acordion body which is ResItemList. 
+* I used state variable to control hide & unhide feature of Acordion. 
+* Used *Swiggy's API* for the data as usual.

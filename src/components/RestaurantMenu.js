@@ -4,6 +4,7 @@
 import ShimmerCard from "./ShimmerCard";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantmenu";
+import ResItemCategory from "./ResItemCategory";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -19,27 +20,38 @@ const RestaurantMenu = () => {
 
   const { itemCards } =
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
-  console.log(itemCards);
+
+  const categories =
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+
+  const itemCategory = categories.filter(
+    (category) =>
+      category.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  );
+
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex flex-col items-start m-4 p-4 w-[400px] shadow-lg">
-      <h3 className="font-bold">{name}</h3>
-      <p>
-        {cuisines.join(", ")} - {costForTwoMessage}
-      </p>
-      <p className="font-semibold">{"Rating- "}{avgRating}</p>
+    <div className="flex flex-col items-center mb-14">
+      <div className="w-6/12 m-auto flex flex-col justify-center items-center p-4 shadow-md">
+        <h3 className="font-bold">{name}</h3>
+        <p>
+          {cuisines.join(", ")} - {costForTwoMessage}
+        </p>
+        <p className="font-semibold">
+          {"Rating- "}
+          {avgRating}
+        </p>
       </div>
-      <h3 className="font-bold mb-2">Menu</h3>
-      <div className="mb-4 pb-4 shadow-xl flex flex-col">
-      <ul>
+      <h3 className="font-bold my-2">Menu</h3>
+      <div className="w-11/12"> 
         {/* whenever you're using a map alway use a key */}
-        {itemCards?.map((item) => (
-          <li key={item.card.info.id}>
-            {item.card.info.name} - {"Rs "}
-            {item.card.info.price / 100 || item.card.info.defaultPrice / 100}
-          </li>
-        ))}
-      </ul>
+
+        {/* Building Accordion feature */}
+        <p>
+          {itemCategory.map((category) => (
+            <ResItemCategory key={category?.card?.card?.title} data={category?.card?.card} />
+          ))}
+        </p>
       </div>
     </div>
   );
