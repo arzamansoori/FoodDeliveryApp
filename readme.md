@@ -2,26 +2,7 @@
 
 Developing Food delivery app using react as a part of my react learnings.
 
-Structure of the app:
- 
-
- * HEADER
-    * Logo
-    * NavItems
-        * Home 
-        * About
-        * Cart
- * Body
-   * Search
-   * RestaurantContainer
-   * RestroCard
-* Footer
-   * CopyRight
-   * Links
-   * Address
-   * Contact
-
-## Episode 4: Exploring the world
+## Exploring the world
 
 * Monolith Architecture vs Microservice Architecture
   * In Monolith Arch, we have big projects, has codes of of API, UI code, Database code, sms. Code is written in same service.
