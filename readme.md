@@ -123,3 +123,11 @@ Developed Acordion feature for Menu Items Category. Added two new components nam
 * ResItemCategory is for Acordion Header, from here we call Acordion body which is ResItemList. 
 * I used state variable to control hide & unhide feature of Acordion. 
 * Used *Swiggy's API* for the data as usual.
+
+## Controlled vs Uncontrolled Components
+
+When a parent controls the state of child component then it is known as Controlled Component.
+
+* To advance the feature of Acordion, I wanted to keep the state of only one child to be true and rest of them should be false. 
+* So, I *lifted the state up* and given the power to its parent. 
+* By controlling the state of the child, I was able to add build this feature in which on click it should show the body and collapse others.

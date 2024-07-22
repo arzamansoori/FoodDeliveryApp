@@ -5,11 +5,14 @@ import ShimmerCard from "./ShimmerCard";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantmenu";
 import ResItemCategory from "./ResItemCategory";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const resInfo = useRestaurantMenu(resId);
+
+  const [showIndex, setShowIndex] = useState(null);
 
   if (resInfo === null) {
     return <ShimmerCard />;
@@ -43,13 +46,18 @@ const RestaurantMenu = () => {
         </p>
       </div>
       <h3 className="font-bold my-2">Menu</h3>
-      <div className="w-11/12"> 
+      <div className="w-11/12">
         {/* whenever you're using a map alway use a key */}
 
         {/* Building Accordion feature */}
         <p>
-          {itemCategory.map((category) => (
-            <ResItemCategory key={category?.card?.card?.title} data={category?.card?.card} />
+          {itemCategory.map((category, index) => (
+            <ResItemCategory
+              key={category?.card?.card?.title}
+              data={category?.card?.card}
+              showItems = {index === showIndex ? true : false}
+              setShowItems = {()=> setShowIndex(index)}
+            />
           ))}
         </p>
       </div>

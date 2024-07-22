@@ -1,13 +1,14 @@
 import { useState } from "react";
 import ResItemList from "./ResItemList";
 
-const ResItemCategory = ({ data }) => {
+const ResItemCategory = ({ data, showItems, setShowItems }) => {
 
   // Declaring state variable to control Acordion hide feature
-  const [showItems, setShowItems] = useState(false);
+  //const [showItems, setShowItems] = useState(false);
 
   const handleClick = () => {
-    setShowItems(!showItems);
+    //setShowItems(!showItems);
+    setShowItems();
   };
 
   return (
@@ -24,7 +25,6 @@ const ResItemCategory = ({ data }) => {
           {showItems && <ResItemList items={data.itemCards} />}
         </span>
       </div>
-      {/* Acordion Body */}
     </div>
   );
 };
