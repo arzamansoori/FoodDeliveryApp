@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -8,23 +8,35 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import ShimmerCard from "./components/ShimmerCard";
+import UserContext from "./utils/UserContext";
+import { useState } from "react";
 //import Grocery from "./components/Grocery";
 
 // Lazy loading/ Dynamic Import/ Dynamic bundling/ Code splitting/ On Demand loading
- const Grocery = lazy(() => {
-  return (
-    import("./components/Grocery")
-  )
- }
- )
+const Grocery = lazy(() => {
+  return import("./components/Grocery");
+});
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+
+  //authentication
+  useEffect(() => {
+    //Make an api call to send username and password
+    const data = {
+      name: "Jungkook",
+    };
+    setUserName(data.name);
+  }, []);
+
   return (
-    <div className="app">
-      <Header />
-      {/* this outlet works as a tunnel, in which children elemetns comes in this according to path */}
-      <Outlet /> 
-    </div>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div className="app">
+        <Header />
+        {/* this outlet works as a tunnel, in which children elemetns comes in this according to path */}
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 
@@ -35,33 +47,37 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />
+        element: <Body />,
       },
       {
         path: "/about",
-        element: <About />
+        element: <About />,
       },
       {
         path: "/contact",
-        element: <Contact />
+        element: <Contact />,
       },
       {
         path: "/grocery",
-        element: <Suspense fallback={<ShimmerCard />}><Grocery/></Suspense>
+        element: (
+          <Suspense fallback={<ShimmerCard />}>
+            <Grocery />
+          </Suspense>
+        ),
       },
       {
         // this path should be dynamic as we'll be loading diff types of menu
         // :resId means this part of the url is dynamic
         path: "/restaurants/:resId",
-        element: <RestaurantMenu />
+        element: <RestaurantMenu />,
       },
     ],
-    errorElement: <Error />
+    errorElement: <Error />,
   },
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("appLayout"));
 
 //root.render(<AppLayout />);
 
-root.render(<RouterProvider router={appRouter} />)
+root.render(<RouterProvider router={appRouter} />);

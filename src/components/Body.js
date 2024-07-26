@@ -1,8 +1,9 @@
 import RestroCard, { withPromotedLabel } from "./RestroCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import ShimmerCard from "./ShimmerCard";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 //USING NORMAL JAVASCRIPT
 // let listOfRestaurants = [
@@ -72,9 +73,11 @@ const Body = () => {
     );
 
     const json = await data.json();
-    console.log("printing json",json);
-    const allCards = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    console.log("allcards",allCards)
+    console.log("printing json", json);
+    const allCards =
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
+    console.log("allcards", allCards);
 
     const cardsWithRestaurants = allCards.filter(
       (card) =>
@@ -83,7 +86,7 @@ const Body = () => {
 
     let allRestaurants = [];
 
-    console.log("Cards with restaurants", cardsWithRestaurants)
+    console.log("Cards with restaurants", cardsWithRestaurants);
 
     for (let card of cardsWithRestaurants) {
       allRestaurants = allRestaurants.concat(
@@ -133,6 +136,8 @@ const Body = () => {
   //   <ShimmerCard />
   // ) :
 
+  const {loggedInUser, setUserName} = useContext(UserContext);
+
   return (
     <div className="body">
       <div className="flex items-center justify-start flex-wrap">
@@ -179,15 +184,23 @@ const Body = () => {
         >
           Top Rated Restaurants{" "}
         </button>
+        <div>
+          <label>Username :</label>
+          <input className="rounded-md border-2 border-pink-200 hover:border-b-4 px-3 py-0.5 bg-green-100 m-2"
+          value = {loggedInUser}
+          onChange={(e)=>setUserName(e.target.value)}>
+               
+          </input>
+        </div>
       </div>
       <div className="flex justify-around flex-wrap">
         {filterRestaurants.map((restaurant) => (
           <Link
-          to={"/restaurants/" + restaurant.info.id}
-          key={restaurant.info.id}
-        >
-          <RestroCard resData={restaurant} />
-        </Link>
+            to={"/restaurants/" + restaurant.info.id}
+            key={restaurant.info.id}
+          >
+            <RestroCard resData={restaurant} />
+          </Link>
           // <Link
           //   to={"/restaurants/" + restaurant.info.id}
           //   key={restaurant.info.id}

@@ -2,10 +2,14 @@ import { CDN_URL } from "../utils/constants";
 
 const RestroCard = (props) => {
   const { resData } = props;
+
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
     resData?.info;
+
     let cuisines2 = cuisines.slice(0, 2);
+
     let displayName = name.length >20 ? name.slice(0,20).concat("...") : name;
+
   return (
     <div className="flex flex-col shadow-lg m-4 p-4 w-[250px] bg-gray-100 hover:bg-gray-300 rounded">
       <img

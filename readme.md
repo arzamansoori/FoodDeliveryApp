@@ -131,3 +131,12 @@ When a parent controls the state of child component then it is known as Controll
 * To advance the feature of Acordion, I wanted to keep the state of only one child to be true and rest of them should be false. 
 * So, I *lifted the state up* and given the power to its parent. 
 * By controlling the state of the child, I was able to add build this feature in which on click it should show the body and collapse others.
+
+## Context API
+
+React has one way data flow structure, which means that data will be flown through the parent then child and then their child. This is known as *Props Drilling*. 
+This is okay in small case application but becomes a problem in a large scale applications. To solve this issue we have *Context API*
+
+Context API is like a global state which everyone can access. Context API has two main components *Context.Provider* and *Context.Consumer*.
+
+I have used Context API in the application to change the username as we type on the input box.
