@@ -23,13 +23,13 @@ const ResItemList = ({ items }) => {
             </p>
           </div>
           <div className="w-3/12 p-4">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col-reverse items-center flex-nowrap">
             {/* <button className="px-1 mx-2 absolute bg-slate-100 border-black border-2 rounded-md">Add +</button> */}
             <img
               className="w-full"
               src={CDN_URL + item.card.info.imageId}
             ></img>
-            <button className="border-2 border-pink-300 p-0.5 px-2 bg-green-100 rounded-md font-mono">ADD +</button>
+            <button className="border-2 absolute border-pink-300 p-0.5 px-2 bg-green-100 rounded-md font-mono">ADD +</button>
             </div>
           </div>
         </div>
