@@ -10,6 +10,8 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import ShimmerCard from "./components/ShimmerCard";
 import UserContext from "./utils/UserContext";
 import { useState } from "react";
+import { Provider } from "react-redux";
+import appStore from "./reduxComponents/appStore";
 //import Grocery from "./components/Grocery";
 
 // Lazy loading/ Dynamic Import/ Dynamic bundling/ Code splitting/ On Demand loading
@@ -30,13 +32,15 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
       <div className="app">
         <Header />
         {/* this outlet works as a tunnel, in which children elemetns comes in this according to path */}
         <Outlet />
       </div>
     </UserContext.Provider>
+    </Provider>
   );
 };
 

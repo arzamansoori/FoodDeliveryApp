@@ -140,3 +140,15 @@ This is okay in small case application but becomes a problem in a large scale ap
 Context API is like a global state which everyone can access. Context API has two main components *Context.Provider* and *Context.Consumer*.
 
 I have used Context API in the application to change the username as we type on the input box.
+
+## REDUX
+
+Including Redux in our store.
+
+Installation of RTK:
+ - Install @reactjs/toolkit and react-redux
+ - Build our store
+ - Connect our store to our app
+ - Slice (cartSlice)
+ - dispatch(action)
+ - Selector
