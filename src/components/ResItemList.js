@@ -16,8 +16,8 @@ const ResItemList = ({ items }) => {
   //dispatching an action
   const dispatch = useDispatch();
 
-  const handleAddItem = () => {
-    dispatch(addItems("pizzza"));
+  const handleAddItem = (item) => {
+    dispatch(addItems(item));
   }
 
   return (
@@ -51,7 +51,7 @@ const ResItemList = ({ items }) => {
               {/* working on this button */}
               <button
                 className="border-2 absolute border-pink-300 p-0.5 px-2 bg-green-100 rounded-md font-mono"
-                onClick={handleAddItem}
+                onClick={() => handleAddItem(item)}
               >
                 ADD +
               </button>

@@ -53,7 +53,10 @@ const Header = () => {
           >
             {btnNameReact}
           </button>
-          <li className="px-2 font-serif font-medium cursor-pointer">Cart- ({cartItems.length} items)</li>
+          {/* <li className="px-2 font-serif font-medium cursor-pointer">Cart- ({cartItems.length} items)</li> */}
+          <li className="px-2 font-serif font-medium cursor-pointer">
+            <Link to="/cart">Cart- ({cartItems.length} items)</Link>
+          </li>
           <li className="px-2 font-mono">{loggedInUser}</li>
         </ul>
       </div>

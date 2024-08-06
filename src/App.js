@@ -12,7 +12,7 @@ import UserContext from "./utils/UserContext";
 import { useState } from "react";
 import { Provider } from "react-redux";
 import appStore from "./reduxComponents/appStore";
-//import Grocery from "./components/Grocery";
+import Cart from "./components/Cart";
 
 // Lazy loading/ Dynamic Import/ Dynamic bundling/ Code splitting/ On Demand loading
 const Grocery = lazy(() => {
@@ -60,6 +60,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "/grocery",
