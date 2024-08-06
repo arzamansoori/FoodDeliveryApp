@@ -15,6 +15,7 @@ const Header = () => {
 
   //Subscribing to the store using selector 
   const cartItems = useSelector((store) => store.cart.items)
+  console.log(cartItems)
 
   useEffect(() => {
     console.log("useEffect called");
@@ -52,7 +53,7 @@ const Header = () => {
           >
             {btnNameReact}
           </button>
-          <li className="px-2 font-medium cursor-pointer">Cart- ({cartItems.length} items)</li>
+          <li className="px-2 font-serif font-medium cursor-pointer">Cart- ({cartItems.length} items)</li>
           <li className="px-2 font-mono">{loggedInUser}</li>
         </ul>
       </div>
