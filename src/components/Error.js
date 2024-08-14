@@ -4,7 +4,7 @@ const Error = () => {
   const err = useRouteError();
   console.log(err);
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-20 text-red-700">
       <h3>Ooops! Something went wrong</h3>
       <h4>
         {err.status}: {err.statusText}

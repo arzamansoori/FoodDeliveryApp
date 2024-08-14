@@ -23,8 +23,9 @@ const Header = () => {
 
   return (
     <div className="flex justify-between bg-pink-200 shadow-lg p-2 flex-wrap">
-      <div>
+      <div className="flex items-center list-none">
         <img className="w-24" src={LOGO_URL}></img>
+        <li className="px-2 font-mono">Welcome {loggedInUser}!</li>
       </div>
       <div className="flex items-center flex-wrap">
         <ul className="p-8 flex flex-row justify-between flex-wrap">
@@ -57,7 +58,6 @@ const Header = () => {
           <li className="px-2 font-serif font-medium cursor-pointer">
             <Link to="/cart">Cart- ({cartItems.length} items)</Link>
           </li>
-          <li className="px-2 font-mono">{loggedInUser}</li>
         </ul>
       </div>
     </div>
