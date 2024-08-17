@@ -152,3 +152,15 @@ Installation of RTK:
  - Slice (cartSlice)
  - dispatch(action)
  - Selector
+
+ ## Testing (The Finale)
+
+ 1. Install React Testing Library
+ 2. Install Jest
+ 3. Install Babel dependency
+ 4. Configure Babel 
+      - Parcel uses Babel bhs Babel is a transpiler
+ 5. Configure Parcel config file to disable default Babel.
+ 6. Jest Configuration
+ 7. Install jsdom library
+    - If we're using >Jest28, then jest-environment jsdom package ust be installe separately.
