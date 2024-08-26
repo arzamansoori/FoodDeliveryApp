@@ -146,6 +146,7 @@ const Body = () => {
           <input
             type="text"
             className="border border-solid border-black"
+            data-testid= "searchInput"
             value={searchRestaurants}
             onChange={(e) => {
               if (e.target.value) {
@@ -176,10 +177,11 @@ const Body = () => {
             //filter logic
             //using useState
             const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4.5
+              (res) => res.info.avgRating > 4.4
             );
 
-            setListOfRestaurants(filteredList);
+            //setListOfRestaurants(filteredList);
+            setFilterRestaurants(filteredList)
           }}
         >
           Top Rated Restaurants{" "}
@@ -201,16 +203,6 @@ const Body = () => {
           >
             <RestroCard resData={restaurant} />
           </Link>
-          // <Link
-          //   to={"/restaurants/" + restaurant.info.id}
-          //   key={restaurant.info.id}
-          // >
-          //   {restaurant?.info?.promoted ? (
-          //     <RestaurantCardPromoted resData={restaurant} />
-          //   ) : (
-          //     <RestroCard resData={restaurant} />
-          //   )}
-          // </Link>
         ))}
       </div>
     </div>

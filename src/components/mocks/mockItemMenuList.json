@@ -1,0 +1,1167 @@
+{
+    "statusCode": 0,
+    "data": {
+        "statusMessage": "done successfully",
+        "cards": [
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                        "text": "Kwality Walls Ice Cream and More",
+                        "headerStyling": {
+                            "textColor": "text_Highest_Emphasis",
+                            "textVariant": "header_H3_Black"
+                        }
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+                        "tabs": [
+                            {
+                                "id": "Order Online",
+                                "title": "Order Online"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "613421",
+                            "name": "Kwality Walls Ice Cream and More",
+                            "city": "Bangalore",
+                            "slugs": {
+                                "restaurant": "kwality-walls-frozen-dessert-and-ice-cream-shop-koramangala-koramangala-12",
+                                "city": "bangalore"
+                            },
+                            "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/b3739937-c8ca-40ea-96cd-03b049b4600e_613421.JPG",
+                            "locality": "6th Block",
+                            "areaName": "Koramangala",
+                            "costForTwo": "20000",
+                            "costForTwoMessage": "₹200 for two",
+                            "cuisines": [
+                                "Desserts",
+                                "Ice Cream"
+                            ],
+                            "avgRating": 4.8,
+                            "veg": true,
+                            "feeDetails": {
+                                "restaurantId": "613421",
+                                "fees": [
+                                    {
+                                        "name": "TYPE_DISTANCE",
+                                        "fee": 2000
+                                    },
+                                    {
+                                        "name": "TYPE_TIME"
+                                    }
+                                ],
+                                "totalFee": 2000,
+                                "title": "Delivery Charge",
+                                "amount": "2000",
+                                "icon": "v1648635511/Delivery_fee_new_cjxumu",
+                                "message": "<b>0.7 kms</b> | ₹20 Delivery fee will apply"
+                            },
+                            "parentId": "582",
+                            "avgRatingString": "4.8",
+                            "totalRatingsString": "100+ ratings",
+                            "sla": {
+                                "restaurantId": "613421",
+                                "deliveryTime": 22,
+                                "minDeliveryTime": 20,
+                                "maxDeliveryTime": 25,
+                                "lastMileTravel": 0.7,
+                                "serviceability": "SERVICEABLE",
+                                "stressFactor": 1,
+                                "rainMode": "RAIN_MODE_NONE",
+                                "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                                "zoneId": 1,
+                                "slaString": "20-25 MINS",
+                                "lastMileTravelString": "0.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2024-08-26 22:45:00",
+                                "visibility": true,
+                                "opened": true,
+                                "restaurantClosedMeta": {}
+                            },
+                            "aggregatedDiscountInfo": {
+                                "header": "30% off",
+                                "shortDescriptionList": [
+                                    {
+                                        "meta": "30% off | Use TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "FLAT125 off | Use FLATDEAL",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "descriptionList": [
+                                    {
+                                        "meta": "30% off up to ₹70 | Use code TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "FLAT125 off | Use FLATDEAL",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "visible": true
+                            },
+                            "badges": {},
+                            "slugString": "kwality-walls-frozen-dessert-and-ice-cream-shop-koramangala-koramangala-12",
+                            "multiOutlet": true,
+                            "isOpen": true,
+                            "labels": [
+                                {
+                                    "title": "Timings",
+                                    "message": "null"
+                                },
+                                {
+                                    "title": "Address",
+                                    "message": "Ramdev Medical: No 898/1, 80 feet main road, 6th block, koramanagala, Banagalore, Karnataka- 560095 (HUL- I43A641P3219)"
+                                },
+                                {
+                                    "title": "Cuisines",
+                                    "message": "Desserts,Ice Cream"
+                                }
+                            ],
+                            "totalRatings": 100,
+                            "aggregatedDiscountInfoV2": {
+                                "header": "30% off",
+                                "shortDescriptionList": [
+                                    {
+                                        "meta": "30% off | Use TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "FLAT125 off | Use FLATDEAL",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "descriptionList": [
+                                    {
+                                        "meta": "30% off up to ₹70 | Use code TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "FLAT125 off | Use FLATDEAL",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "couponDetailsCta": "View coupon details"
+                            },
+                            "type": "F",
+                            "nudgeBanners": [
+                                {
+                                    "minValue": 132,
+                                    "maxValue": 189,
+                                    "priority": 1,
+                                    "couponCode": "TRYNEW",
+                                    "discountInfo": {
+                                        "discountType": "Percentage",
+                                        "value": 30
+                                    },
+                                    "lockedMessage": "Add items worth ₹<amount> to save upto ₹70 | Code TRYNEW",
+                                    "unlockedMessage": "TRYNEW Coupon Unlocked! Use it to save upto ₹70",
+                                    "logoCtx": {}
+                                },
+                                {
+                                    "minValue": 454,
+                                    "maxValue": 649,
+                                    "priority": 3,
+                                    "couponCode": "FLAT175",
+                                    "discountInfo": {
+                                        "discountType": "Flat",
+                                        "value": 175
+                                    },
+                                    "lockedMessage": "Add items worth ₹<amount> to save ₹175 | Code FLAT175",
+                                    "unlockedMessage": "FLAT175 Coupon Unlocked! Use it to save ₹175",
+                                    "logoCtx": {}
+                                }
+                            ],
+                            "headerBanner": {
+                                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/613421"
+                            },
+                            "expectationNotifiers": [
+                                {
+                                    "text": "<b>0.7 kms</b> | ₹20 Delivery fee will apply",
+                                    "icon": {
+                                        "imageId": "v1648635511/Delivery_fee_new_cjxumu"
+                                    },
+                                    "popup": {
+                                        "cta": {}
+                                    },
+                                    "type": "DISTANCE_FEE_NON_FOOD_LM",
+                                    "enrichedText": "<b>0.7 kms</b> | ₹20 Delivery fee will apply",
+                                    "halfCardPopup": {
+                                        "halfCardPopupHeader": {}
+                                    },
+                                    "trailingIcon": {}
+                                }
+                            ],
+                            "ratingSlab": "RATING_SLAB_5",
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "hasBestsellerItems": true,
+                            "cartOrderabilityNudgeBanner": {
+                                "parameters": {},
+                                "presentation": {}
+                            },
+                            "latLong": "12.939421,77.625671",
+                            "backgroundImageOverlayInfo": {}
+                        },
+                        "analytics": {}
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_ON_ITEM_ADD",
+                        "sectionId": "POP_UP_CROUTON_MENU"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                        "layout": {
+                            "rows": 1,
+                            "columns": 5,
+                            "horizontalScrollEnabled": true,
+                            "itemSpacing": 12,
+                            "lineSpacing": 10,
+                            "widgetPadding": {},
+                            "containerStyle": {
+                                "containerPadding": {
+                                    "left": 10,
+                                    "right": 10,
+                                    "bottom": 16
+                                }
+                            },
+                            "scrollBar": {}
+                        },
+                        "id": "offerCollectionWidget_UX4",
+                        "gridElements": {
+                            "infoWithStyle": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                                "offers": [
+                                    {
+                                        "info": {
+                                            "header": "30% OFF UPTO ₹70",
+                                            "offerTagColor": "#E46D47",
+                                            "offerIds": [
+                                                "8ee8ffb7-1720-4c20-9f94-080cb8b0a4dc"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE TRYNEW",
+                                            "description": "ON SELECT ITEMS",
+                                            "offerType": "offers",
+                                            "restId": "613421",
+                                            "offerLogo": "offers/generic",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹125 OFF",
+                                            "offerTag": "FLAT DEAL",
+                                            "offerTagColor": "#E46D47",
+                                            "offerIds": [
+                                                "de19c4fa-282a-4707-86a4-c6bd5b8fc5f4"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE FLATDEAL",
+                                            "description": "ABOVE ₹399",
+                                            "offerType": "offers",
+                                            "restId": "613421",
+                                            "offerLogo": "offers/generic",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹175 OFF",
+                                            "offerTagColor": "#E46D47",
+                                            "offerIds": [
+                                                "1808b638-46e9-43fa-a8ac-1a80b5c6983d"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE FLAT175",
+                                            "description": "ABOVE ₹649",
+                                            "offerType": "offers",
+                                            "restId": "613421",
+                                            "offerLogo": "offers/generic",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹200 OFF",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/7/31/d2b89c98-2528-4370-a271-ea127127ad2d_Axis.png",
+                                            "offerIds": [
+                                                "19096af1-e158-440f-abfe-129ebd0a67b8"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE AXIS200",
+                                            "description": "ABOVE ₹1000",
+                                            "offerType": "offers",
+                                            "restId": "613421",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/7/31/d2b89c98-2528-4370-a271-ea127127ad2d_Axis.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "30% OFF UPTO ₹150",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/7/31/16d410a3-56fd-4a93-8f21-373180d89ce4_AxisMenuLogo.png",
+                                            "offerIds": [
+                                                "a2812cd5-616f-47e9-81e6-04d650f77d20"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE AXIS30",
+                                            "description": "ABOVE ₹200",
+                                            "offerType": "offers",
+                                            "restId": "613421",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/7/31/16d410a3-56fd-4a93-8f21-373180d89ce4_AxisMenuLogo.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    }
+                                ],
+                                "habitMilestoneInfo": {
+                                    "callout": {}
+                                },
+                                "loyaltyDiscoverPresentationInfo": {
+                                    "logoCtx": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "groupedCard": {
+                    "cardGroupMap": {
+                        "REGULAR": {
+                            "cards": [
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                                            "isPureVeg": true,
+                                            "badges": {},
+                                            "vegOnlyDetails": {
+                                                "imageId": "AutoVegOnly_qkjowj",
+                                                "title": "Showing only vegetarian options.",
+                                                "description": "Tap on the VEG ONLY button to turn off the setting"
+                                            },
+                                            "offersFilter": {
+                                                "attributes": {
+                                                    "displayText": "30% OFF"
+                                                }
+                                            },
+                                            "topRatedFilter": {
+                                                "attributes": {
+                                                    "displayText": "Ratings 4.0+"
+                                                }
+                                            },
+                                            "kidsCategoryFilter": {
+                                                "attributes": {
+                                                    "displayText": "Kids Favourites",
+                                                    "tooltip": {
+                                                        "enabled": true,
+                                                        "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                                                    }
+                                                }
+                                            },
+                                            "vegFilter": {
+                                                "attributes": {
+                                                    "displayText": "VEG"
+                                                }
+                                            },
+                                            "nonvegFilter": {
+                                                "attributes": {
+                                                    "displayText": "NONVEG"
+                                                }
+                                            }
+                                        },
+                                        "relevance": {
+                                            "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                                            "sectionId": "MENU_FILTER_TOGGLE"
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Kwality Wall's New Arrivals ",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "133945169",
+                                                            "name": "Feast Cadbury Crackle 70ml",
+                                                            "category": "Kwality Wall's New Arrivals ",
+                                                            "description": "Experience the delight of Cadbury Crackle chocolate in a Kwality Walls Feast. Every bite has the deliciousness of Cadbury crackle Chocolate with signature hard chocolate. For any chocolate lover",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/7ba31cec-da68-4025-a3b3-29c32732ad2a_c89cbdc8-73f6-4e06-846c-f74136d5f679.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 6000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "offerTags": [
+                                                                {
+                                                                    "title": "30% OFF",
+                                                                    "subTitle": "USE TRYNEW",
+                                                                    "textColor": "#DB6742",
+                                                                    "backgroundColor": "#FAE8E3"
+                                                                }
+                                                            ],
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "5.0",
+                                                                    "ratingCount": "6 ratings",
+                                                                    "ratingCountV2": "6"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Cornetto ",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427102",
+                                                            "name": "Cornetto Choco Vanilla ( Choco chips) , 105ml x 4",
+                                                            "category": "Cornetto ",
+                                                            "description": "A duo of rich and creamy vanilla topped with chocolate sauce and Choco chips in a crunchy waffle cone. Kcal/Serving177",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/1f916795-822d-4a61-8567-bc64e88df5af_ad6fe04f-b151-45b3-817f-b3c372b88f0a.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 12000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427094",
+                                                            "name": "Cornetto Oreo, 110ml",
+                                                            "category": "Cornetto ",
+                                                            "description": "Oreo cookie chunks in creamy vanilla, delicious chocolate disc and crunchy waffle cone.  An all time favourite for cone lovers! Kcal/Serving246",
+                                                            "imageId": "2d665bfdf73e8abb87bcc2252d3d8482",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 7000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "5.0",
+                                                                    "ratingCount": "5 ratings",
+                                                                    "ratingCountV2": "5"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427095",
+                                                            "name": "Cornetto Salted Caramel Brownie, 110ml",
+                                                            "category": "Cornetto ",
+                                                            "description": "Sweet and Salty! Crunchy waffle cone loaded with salted caramel, brownies and topped with a soft chocolate disc. Kcal/Serving250",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/ccdc83a3-a34b-450c-8f2b-b11aa2a99c63_5ffd60cb-c8be-4c18-a63f-5ba249f440ff.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 7000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427099",
+                                                            "name": "Cornetto Black Forest, 110ml",
+                                                            "category": "Cornetto ",
+                                                            "description": "Black Forest cake meets Feast!\nCake pieces through layers of Feast with a solid chocolate surprise at the end. Kcal/Serving246",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/66a3cf28-0ac9-4472-bad7-ce9a467de481_42df8993-de45-4c0e-9357-8902c57399db.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 6500,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427101",
+                                                            "name": "Cornetto Butterscotch, 105ml",
+                                                            "category": "Cornetto ",
+                                                            "description": "Creamy butterscotch loaded with chunks of caramel cashew topping in a crunchy waffle cone. Kcal/Serving198",
+                                                            "imageId": "2f25b3897c950594eda32c440147c0c1",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 4500,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "5.0",
+                                                                    "ratingCount": "17 ratings",
+                                                                    "ratingCountV2": "17"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "114111760",
+                                                            "name": "Cornetto Double Chocolate 105ml",
+                                                            "category": "Cornetto ",
+                                                            "description": "Duo of milk and dark chocolate topped with chocolate sauce, chocochips in a crunchy waffle cone. Kcal/Serving184",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/072ff94b-f6a6-4fa6-ae0c-9412502f685d_8c489616-d8f2-4981-9841-f9e13b1bc76f.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 4000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.8",
+                                                                    "ratingCount": "14 ratings",
+                                                                    "ratingCountV2": "14"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427105",
+                                                            "name": "Cornetto Choco Brownie, 110ml",
+                                                            "category": "Cornetto ",
+                                                            "description": "Disc as soft as a kiss!\nCrunchy waffle cone filled with creamy chocolate and brownie pieces with a soft chocolate disc and almond sprinkles on top. Kcal/Serving249",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/25/463a1dbc-eabf-4262-b352-05bfb6094058_54458971-fed1-415e-99e2-27a5115df43b.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 7000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Magnum Ice Cream",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427119",
+                                                            "name": "Magnum Brownie Ice Cream, 80ml",
+                                                            "category": "Magnum Ice Cream",
+                                                            "description": "Expertly crafted icecream with brownie flavour, crunchy cashew and Belgian chocolate. Kcal/Serving224",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/25/6054fa05-6a31-41f9-ad26-222fa63c1d54_4e2f3ee9-e0ea-46c7-9bc6-c8bfb5338cb4.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.9",
+                                                                    "ratingCount": "26 ratings",
+                                                                    "ratingCountV2": "26"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427122",
+                                                            "name": "Magnum Chocolate Truffle Ice Cream, 80ml",
+                                                            "category": "Magnum Ice Cream",
+                                                            "description": "Rich chocolate icecream with truffle sauce wrapped in thick Belgian chocolate. Kcal/Serving182",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/25/9b33426f-690a-4b0a-9907-2e050407c862_41cf042b-4574-49aa-97f3-bfea6a0b4054.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427116",
+                                                            "name": "Magnum Almond Ice Cream, 80ml",
+                                                            "category": "Magnum Ice Cream",
+                                                            "description": "Expertly crafted icecream with Madagascar vanilla, crunchy Australian almonds and Belgian chocolate. Kcal/Serving223",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/13219cfb-a3f1-422b-b5a4-1980e74cd9bb_87977043-247e-433f-ae4a-cd90ba7edb04.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.9",
+                                                                    "ratingCount": "23 ratings",
+                                                                    "ratingCountV2": "23"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Family Tubs",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427144",
+                                                            "name": "Oreo & Cream, 700ml",
+                                                            "category": "Family Tubs",
+                                                            "description": "The OG Oreo Tub!\nCrunchy Oreos chunks in rich creamy vanilla. Kcal/Serving126",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/5205c7cd-139e-4209-a3b3-82bb5aa5e39e_6ee4420d-e9cb-49b4-b550-4ae5d0b33bc0.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 29900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "offerTags": [
+                                                                {
+                                                                    "title": "30% OFF",
+                                                                    "subTitle": "USE TRYNEW",
+                                                                    "textColor": "#DB6742",
+                                                                    "backgroundColor": "#FAE8E3"
+                                                                }
+                                                            ],
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": " Party Packs",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427149",
+                                                            "name": "Blushing Strawberry Party Pack 700ml",
+                                                            "category": " Party Packs",
+                                                            "description": "A fruit lover's delight.\nA scoop that tastes like fresh strawberries.  Kcal/Serving112",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/b2bec1ce-0775-47c6-82cc-d3c3a87eeade_e8af665d-daa5-4398-82a6-6410786af9e9.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 12500,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "offerTags": [
+                                                                {
+                                                                    "title": "30% OFF",
+                                                                    "subTitle": "USE TRYNEW",
+                                                                    "textColor": "#DB6742",
+                                                                    "backgroundColor": "#FAE8E3"
+                                                                }
+                                                            ],
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427147",
+                                                            "name": "Tutti Frutti Party Pack, 700ml",
+                                                            "category": " Party Packs",
+                                                            "description": "Rich creamy scoop loaded with tiny bites of tutti fruity. Kcal/Serving96",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/c429247a-6264-44a7-9e2c-9a253daa0952_085cfa22-bb60-4c59-b845-52b9e128fa4e.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 15500,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "offerTags": [
+                                                                {
+                                                                    "title": "30% OFF",
+                                                                    "subTitle": "USE TRYNEW",
+                                                                    "textColor": "#DB6742",
+                                                                    "backgroundColor": "#FAE8E3"
+                                                                }
+                                                            ],
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Single Serve Cups",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "140427157",
+                                                            "name": "Trixy blueberry Cheesecake, (Sundae) 110ml",
+                                                            "category": "Single Serve Cups",
+                                                            "description": "Parlour like fun in a cup!\n3 delicious layers - blueberry sauce, creamy cheesecake dessert  and crunchy cinnamon cookies. Kcal/Serving340",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/d8479fc8-3daf-4fd6-92b9-5bde022133df_40f7c852-ee32-4319-a1f1-d4adbd95f781.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 7000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "offerTags": [
+                                                                {
+                                                                    "title": "30% OFF",
+                                                                    "subTitle": "USE TRYNEW",
+                                                                    "textColor": "#DB6742",
+                                                                    "backgroundColor": "#FAE8E3"
+                                                                }
+                                                            ],
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "5.0",
+                                                                    "ratingCount": "3 ratings",
+                                                                    "ratingCountV2": "3"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "114111739",
+                                                            "name": "Trixy Cookie Sundae 110ml",
+                                                            "category": "Single Serve Cups",
+                                                            "description": "(110ml) Parlour like fun in a cup. \n3 delicious layers - silky chocolate disc, delicious cookies & cream and crunchy choco cookies. Kcal/Serving235",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/ab4fa7f8-92de-45f5-896f-fdbe08e6aa7c_f464e122-da96-4bd9-a41c-4b17599431fe.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 7000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Duo Packs",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "121892137",
+                                                            "name": "Aamras [60ml x 2pcs]",
+                                                            "category": "Duo Packs",
+                                                            "description": "Aamras All Year Round!\nDelicious mango stick made with pulp of real alphonso mangoes. Kcal/Serving195",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/4aacf1d3-6d7b-40fd-a579-295a6c28e706_2484a6d7-6de1-48f0-ab42-e19bba706181.jpg_compressed",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 6000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "121892133",
+                                                            "name": "Sandwich Chocolate and Vanilla [90ml x 2pcs]",
+                                                            "category": "Duo Packs",
+                                                            "description": "Looking for a sweet snack? A hearty delicious sandwich filled creamy vanilla and yummy chocolate between two crunchy biscuits. Kcal/Serving168",
+                                                            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/23/6f77999c-7196-4ddf-9548-d864c77c5355_79075a28-decc-409e-bcce-0a7d99970c28.jpg",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 7000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {}
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                                            "type": "FSSAI",
+                                            "imageId": "fssai_final_edss9i",
+                                            "text": [
+                                                "License No. 21222008000786"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                                            "name": "Kwality Walls Ice Cream and More",
+                                            "area": "Koramangala",
+                                            "completeAddress": "Ramdev Medical: No 898/1, 80 feet main road, 6th block, koramanagala, Banagalore, Karnataka- 560095 (HUL- I43A641P3219)"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "firstOffsetRequest": true,
+        "isQCLink": false
+    },
+    "tid": "34f61204-522e-4690-9b74-03115ee122e2",
+    "sid": "fr4f28a5-825d-41ef-9066-56849c1c69a6",
+    "deviceId": "be81e8b9-b5e7-9383-b37c-3993670008e0",
+    "csrfToken": "Wgni0xBXJfez-THHw3pLR2OYhKX0l-j7YOsDyY-M"
+}
